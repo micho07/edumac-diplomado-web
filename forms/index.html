@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<!-- IDIOMA ESPAÑOL -->
+
+<head>
+    <meta charset="UTF-8">
+    <title> Formularios Web </title>
+    <!-- primero librerias, depsues plugins, y al final main.css -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-page">
+            <h1> Formularios </h1>
+        </header>
+
+
+
+
+        <main class="main-page">
+            <!--(section.section-page>h2{seccion $}+p>lorem50)*4-->
+            <section class="section-page">
+                <h2>Contacto</h2>
+
+
+                <!-- 
+                    Atributo id: se sugiere utizar formato "camelcase- lowercase".
+                    calemcase:
+                        -uppercase:MiAtributoId
+                        -lowercase:miAtributoId
+
+                    
+                    Atributo "action": se tiene que especificar la ruta (path) del archivo que va a gestionar los datos del formulario.
+                    input: El elemento de entrada de datos 
+                    tipos (types):
+                        -text (texto normal)
+                        -email
+                        -tel
+                        -number
+                        -url
+                        -radio
+                        -checkbox (despliega listado)
+                        -submit (envia datos)
+                        -reset (limpia el formulario)
+                        -password (se ven * al escribir)
+                        -file 
+
+                    -select: combo de multiples opciones
+                        -option: las opciones del elemento select.
+
+                    -text area : comentario más grande.    
+                -->
+                <form action="#" class="form" novalidate> 
+                    <div class="form__element">  
+                        <label for="formName" class="form__label">Nombre</label>
+                        <input id="formName" class="form__input" type="text" />
+                     </div>
+                    
+                    <div class="form__element">  
+                        <label for="formTel" class="form__label">Telefono</label>
+                        <input id="formTel" class="form__input" type="tel">
+                    </div>
+
+                    <div class="form__element">  
+                        <label for="formEmail" class="form__label">Email</label>
+                        <input id="formEmail" class="form__input" type="email">
+                    </div>
+
+                    <div class="form__element">  
+                        <label for="formUrl" class="form__label">Sitio Web</label>
+                        <input id="formUrl" class="form__input" type="url">
+                    </div>
+
+                    <div class="form__element">
+                        <span class="form__label"> Sexo: </span>
+
+                        <input id="formFemale" type="radio">
+                        <label for="formFemale">Femenino</label>
+
+                        <input id="formMale" type="radio">
+                        <label for="formMale"> Masculino </label>
+                    </div>
+
+                    <div class="form__element">
+                        <span class="form__label"> Pasatiempos: </span>
+                        
+                        <input id="formRead" type="checkbox">
+                        <label for="formRead">Leer</label>
+                        
+                        <input id="formSwim" type="checkbox">
+                        <label for="formSwim"> Nadar </label>
+                        
+                        <input id="formRun" type="checkbox">
+                        <label for="formRun"> Correr </label>
+                    </div>
+                    
+                    
+                    <div class="form__element">
+                        <label for="formNationality" class="form__label"> Nacionalidad </label>
+                        <select id="formNationality" class="form__select">
+                            <option> Selecciona tu Nacionalidad </option>
+                            <option> México</option>
+                            <option> Argentina</option>
+                            <option> Francia</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form__element">
+                        <label for="formMessage" class="form__label">Escribe tu Opinión </label>
+                        <textarea id="formMessage" class="form__textarea"></textarea>
+                    </div>
+                    
+
+                    <div class="form__element">
+                        <input type="reset" value="Limpiar formulario" class="form__button">
+                        <input type="submit" value="Enviar datos" class="form__button form__button--main" >
+                    </div>
+
+
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="footer-page">
+            <p> Todos los Derechos recervados | Michelle Villavicencio | 2017 </p>
+        </footer>
+
+    </div>
+
+    <div id="js">
+        <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

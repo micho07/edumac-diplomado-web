@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*  Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
+
+/* General  */
+body {margin: 0;}
+
+ul, ol {margin: 0; padding: 0; list-style-type: none; font-family: 'Open Sans', sans-serif; font-size: 14px;}
+
+img {display: block; max-width:100%; }
+
+.container { max-width: 1200px; margin: 0 auto; }
+
+/* Header */
+
+
+
+/*  Nav */
+
+
+
+/* Main */
+
+
+
+/* Footer */
+
+/* Forms */
+
+.form {
+    padding: 25px 50px;
+    border: 1px soliD rgb(169, 79, 243)}
+
+.form__label {
+    /* 200: thing */
+}
+
+.form__label {
+    display: block;
+}
+
+.form__element {
+    margin-bottom: 15px;
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    border: 1px solid #ce32b9;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    border-color: #40e276dc
+}
+.form__textarea {
+    height: 100px;
+}
+
+form__button {
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 1px solid #f32525;
+    font-size: 16px;
+    cursor: pointer;
+    color: #d7e056;
+    transition: all .3s;
+}
+
+.form__button:hover {
+    background-color: #ff9999;
+}
+
+.form__button--main {
+    background-color: #40e276dc;
+    border-color: #ce32b9;
+    color: #d7e056;
+}
+
+.form__button--main:hover {
+    background-color: #40e276dc;
+    
+}
+
+/* Helper */
+.clearfix:before,
+.clearfix:after {content: ''; display: block;}
+.clearfix:after {clear: both;}
+
+.clear {clear: both;}
+
