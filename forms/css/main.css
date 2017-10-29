@@ -31,7 +31,10 @@ img {display: block; max-width:100%; }
 
 .form {
     padding: 25px 50px;
-    border: 1px soliD rgb(169, 79, 243)}
+    border: 1px solid #000000;
+    max-width: 50%;
+    margin: 0 auto;
+}
 
 .form__label {
     /* 200: thing */
@@ -46,45 +49,75 @@ img {display: block; max-width:100%; }
 }
 
 .form__input,
-.form__textarea {
+.form__textarea,
+.form__select {
     width: 100%;
-    border: 1px solid #ce32b9;
+    border: 1px solid #000000;
     padding: 5px 10px;
     font-size: 16px;
     outline: none;
+    box-sizing: border-box;
 }
+/* "border-sizing"  con valor "border-box" va ha provocar que le valor
+ de la propiedad "padding" y el ancho de la propiedad "border" 
+se tomen del ancho del elemento, es decir, no los va a sumar 
+(comportamineto por defecto). */
 
 .form__input:focus,
 .form__textarea:focus {
     border-color: #40e276dc
 }
+
+.form__input:disabled,
+.form__textarea:disabled {
+    border-color: #F2F2F2;
+    color: #999;
+}
+
 .form__textarea {
     height: 100px;
 }
 
-form__button {
+form__select {
+    font-size: 14px;
+    height: 30px;
     background-color: transparent;
+}
+
+form__button {
+    background-color: #F2F2F2;
     padding: 15px 25px;
-    border: 1px solid #f32525;
+    border: 1px solid #ce32b9 ;
     font-size: 16px;
     cursor: pointer;
-    color: #d7e056;
+    border: 1px solid #ce32b9;
+    color: #ce32b9;
     transition: all .3s;
 }
 
 .form__button:hover {
-    background-color: #ff9999;
+    background-color: #ce32b9;
 }
 
 .form__button--main {
-    background-color: #40e276dc;
+    background-color: #ce32b9;
     border-color: #ce32b9;
-    color: #d7e056;
+    color: #F2F2F2;
 }
 
 .form__button--main:hover {
-    background-color: #40e276dc;
+    background-color: #000000;
     
+}
+
+.form label.error {
+    color: #ff0000;
+}
+
+.form__input.error, 
+.form__textarea.error {
+    background-color: rgba(240, 135, 135, .2);
+   
 }
 
 /* Helper */

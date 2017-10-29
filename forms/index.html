@@ -49,67 +49,72 @@
                     -select: combo de multiples opciones
                         -option: las opciones del elemento select.
 
-                    -text area : comentario más grande.    
+                    -text area : comentario más grande.  
+                    
+                    - Atributo "value" sirve para establecer un valor por defecto.
+
+                    -Atributo "checked" sirve para seleccionar un valor por defecto (checkbox) en los elementos input de tipo :
+                        checkbox y radio
                 -->
-                <form action="#" class="form" novalidate> 
+                <form id="formContact" action="#" class="form" method="post" novalidate> 
                     <div class="form__element">  
                         <label for="formName" class="form__label">Nombre</label>
-                        <input id="formName" class="form__input" type="text" />
+                        <input id="formName" class="form__input" type="text" name="formName" required/>
                      </div>
                     
                     <div class="form__element">  
                         <label for="formTel" class="form__label">Telefono</label>
-                        <input id="formTel" class="form__input" type="tel">
+                        <input id="formTel" class="form__input" type="tel" name="formTel" required>
                     </div>
 
                     <div class="form__element">  
                         <label for="formEmail" class="form__label">Email</label>
-                        <input id="formEmail" class="form__input" type="email">
+                        <input id="formEmail" class="form__input" type="email" name="formEmail" required>
                     </div>
 
                     <div class="form__element">  
                         <label for="formUrl" class="form__label">Sitio Web</label>
-                        <input id="formUrl" class="form__input" type="url">
+                        <input id="formUrl" class="form__input" type="url" name="formUrl" required>
                     </div>
 
                     <div class="form__element">
                         <span class="form__label"> Sexo: </span>
 
-                        <input id="formFemale" type="radio">
+                        <input id="formFemale" type="radio" name="gender" value="Femenino">
                         <label for="formFemale">Femenino</label>
 
-                        <input id="formMale" type="radio">
+                        <input id="formMale" type="radio" name="gender" value="Masculino">
                         <label for="formMale"> Masculino </label>
                     </div>
 
                     <div class="form__element">
                         <span class="form__label"> Pasatiempos: </span>
                         
-                        <input id="formRead" type="checkbox">
+                        <input id="formRead" type="checkbox" name="formRead" value="Leer" >
                         <label for="formRead">Leer</label>
                         
-                        <input id="formSwim" type="checkbox">
+                        <input id="formSwim" type="checkbox" name="formSwim" value="Nadar">
                         <label for="formSwim"> Nadar </label>
                         
-                        <input id="formRun" type="checkbox">
+                        <input id="formRun" type="checkbox" name="formRun" value="Correr">
                         <label for="formRun"> Correr </label>
                     </div>
                     
                     
                     <div class="form__element">
                         <label for="formNationality" class="form__label"> Nacionalidad </label>
-                        <select id="formNationality" class="form__select">
-                            <option> Selecciona tu Nacionalidad </option>
-                            <option> México</option>
-                            <option> Argentina</option>
-                            <option> Francia</option>
+                        <select id="formNationality" class="form__select" name="formNationality" required>
+                            <option value=""> Selecciona tu Nacionalidad </option>
+                            <option value="México"> México</option>
+                            <option value="Argentina"> Argentina</option>
+                            <option value="Francia"> Francia</option>
                         </select>
                     </div>
 
 
                     <div class="form__element">
                         <label for="formMessage" class="form__label">Escribe tu Opinión </label>
-                        <textarea id="formMessage" class="form__textarea"></textarea>
+                        <textarea id="formMessage" class="form__textarea" name="formMessage" required></textarea>
                     </div>
                     
 
@@ -132,6 +137,7 @@
 
     <div id="js">
         <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins/jquery.validate.min.js"></script>
         <script src="js/main.js"></script>
     </div>
 </body>
