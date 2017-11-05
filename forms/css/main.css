@@ -15,7 +15,19 @@ img {display: block; max-width:100%; }
 
 /* Header */
 
+.header-page {
+    background-color: #e96fd9;
+    padding: 100px 0;
 
+}
+
+.header-page h1 {
+    margin: 0;
+    color: #F2F2F2;
+    font-weight: 300px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
 /*  Nav */
 
@@ -23,9 +35,33 @@ img {display: block; max-width:100%; }
 
 /* Main */
 
+.main-page {
+    padding: 65px 0;
+ 
+}
+
+.main-page h2 {
+    font-weight: 300px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color:  #e96fd9;
+    
+}
+
+.main-page h2:first-child {
+    margin-top: 0;
+}
 
 
 /* Footer */
+
+.footer-page {
+    background-color: #e96fd9 ;
+    padding: 25px 0;
+    color: #F2F2F2;
+    text-align: center;
+    
+}
 
 /* Forms */
 
