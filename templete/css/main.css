@@ -4,6 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
 
+
+/* Grid */
+
+@import url('lib/grid.css');
+
 /* General  */
 body {margin: 0;}
 
@@ -11,7 +16,7 @@ ul, ol {margin: 0; padding: 0; list-style-type: none; font-family: 'Open Sans', 
 
 img {display: block; max-width:100%; }
 
-.container { max-width: 1200px; margin: 0 auto; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
 
 /* Header */
 
