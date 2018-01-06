@@ -8,6 +8,7 @@
     <!-- primero librerias, depsues plugins, y al final main.css -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="css/plugins/jquery.fancybox.min.css" />    
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -129,18 +130,51 @@
                 <div id="slider" class="slider">
                     <ul class="slides">
                         <li>
-                            <h3>Slider 1</h3>
+                            <div class="slider__content">
+                                    <h3>Slider 1</h3>
+                                    <a href="files/630HD.pdf"> Ver PDF en la misma pestaña</a>
+                            </div>
+                            
                             <img src="images/img-1.jpg" alt="">
                         </li>
                         <li>
-                            <h3> Slider 2</h3>
+                                <div class="slider__content">
+                                        <h3>Slider 2</h3>
+                                        <a href="files/630HD.pdf"  target="_blank"> Ver PDF en una nueva pestaña</a>
+                                </div>
                             <img src="images/img-2.jpg" alt="">
                         </li>
                         <li>
-                            <h3> Slider 3</h3>
+                                <div class="slider__content">
+                                        <h3>Slider 3</h3>
+                                        <a href="files/630HD.pdf" download> Descargar PDF</a>
+                                </div>
+                            <img src="images/img-3.jpg" alt="">
+                        </li>
+                        <li>
+                                <div class="slider__content">
+                                        <h3>Slider 4</h3>
+                                        <a href="files/630HD.pdf" class="modal-box-pdf"> Abrir PDF en Modal Box PDF</a>
+                                </div>
                             <img src="images/img-3.jpg" alt="">
                         </li>
                     </ul>
+
+
+                    <ul class="slider__direction-nav">
+                        <li>
+                            <a href="#" class="flex-prev">
+                                    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex-next">
+                                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+
+
                 </div>
             </div>
             </section>
@@ -199,6 +233,7 @@
         <script src="js/lib/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/jquery.flexslider-min.js"></script>
         <script src="js/plugins/jquery.sticky.js"></script>
+        <script src="js/plugins/jquery.fancybox.min.js"></script>
         <script src="js/main.js"></script>
     </div>
 </body>
